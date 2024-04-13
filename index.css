@@ -1,0 +1,63 @@
+body{
+    height: 100vh;
+    background-color: #1B1212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+ color:	#FFFFFF;
+ text-align: center;
+ line-height: 1;
+}
+
+.captions span{
+    background: #dd5e89; 
+    background: -webkit-linear-gradient(to right, #dd5e89, #f7bb97); 
+    background: linear-gradient(to right, #dd5e89, #f7bb97);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    animation: auto-scroll 10s infinite;
+}
+.captions{
+    height: 1em;
+    overflow: hidden;
+    display: flex;
+    font-size: calc(1em+10px);
+    flex-direction: column;
+}
+@keyframes auto-scroll { 
+    0%{
+        transform: translateY(0);
+    }
+    5%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-1em);
+    }
+    30%{
+        transform: translateY(-1em);
+    }
+    35%{
+        transform: translateY(-2em);
+    }
+    55%{
+        transform: translateY(-2em);
+    }
+    60%{
+        transform: translateY(-3em);
+    }
+    80%{
+        transform: translateY(-3em);
+    }
+    85%{ 
+        transform: translateY(-4em);
+    }
+    100%{
+        transform: translateY(-4em)
+    }
+}
